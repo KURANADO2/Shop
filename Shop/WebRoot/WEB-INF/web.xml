@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+
+	<filter>
+		<filter-name>AutoLoginFilter</filter-name>
+		<filter-class>cn.xinling.web.filter.AutoLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AutoLoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ActiveServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.ActiveServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CheckUsernameServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.CheckUsernameServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.ProductServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BaseServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.BaseServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CallbackServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.CallbackServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CheckImgServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.CheckImgServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AdminAddProductServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminAddProductServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchWordServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.SearchWordServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AdminAddProductUIServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminAddProductUIServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminAddProductUIServlet</servlet-name>
+		<url-pattern>/adminAddProductUIServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminDeleteProductServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminDeleteProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminDeleteProductServlet</servlet-name>
+		<url-pattern>/adminDeleteProductServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminSearchProductListServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminSearchProductListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminSearchProductListServlet</servlet-name>
+		<url-pattern>/adminSearchProductListServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminUpdateProductUIServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminUpdateProductUIServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUpdateProductUIServlet</servlet-name>
+		<url-pattern>/adminUpdateProductUIServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminProductListServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminProductListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminProductListServlet</servlet-name>
+		<url-pattern>/adminProductListServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminUpdateProductServlet</servlet-name>
+		<servlet-class>cn.xinling.web.servlet.AdminUpdateProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUpdateProductServlet</servlet-name>
+		<url-pattern>/adminUpdateProductServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/registerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ActiveServlet</servlet-name>
+		<url-pattern>/activeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckUsernameServlet</servlet-name>
+		<url-pattern>/checkUsernameServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/productServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BaseServlet</servlet-name>
+		<url-pattern>/baseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/userServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CallbackServlet</servlet-name>
+		<url-pattern>/callbackServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckImgServlet</servlet-name>
+		<url-pattern>/checkImgServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/adminServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminAddProductServlet</servlet-name>
+		<url-pattern>/adminAddProductServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchWordServlet</servlet-name>
+		<url-pattern>/searchWordServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
